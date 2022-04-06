@@ -25,4 +25,8 @@ export class Student {
     this.inscriptionGrantValue = data.inscription_grant_value;
     this.inscriptionGrantType = data.inscription_grant_type;
   }
+
+  toObject(): any {
+    return JSON.parse(JSON.stringify(this))
+  }
 }
